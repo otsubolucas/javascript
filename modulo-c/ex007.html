@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SOMANDO</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <!--Tentar criar sozinho modelo de site que some dois números-->
+    <h1>Somando dois Números</h1>
+    <input type="number" name="txn1" id="txn1"> + 
+    <input type="number" name="txn2" id="txn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div>Resultado: <span id="res"></span></div>
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('txn1')
+            var tn2 = document.getElementById('txn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            res.innerHTML = soma
+        }
+    </script>
 </body>
 </html>
