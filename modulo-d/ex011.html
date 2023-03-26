@@ -26,9 +26,10 @@
         function clicar(){
             var ps = document.getElementById('pais')
             res.innerHTML = `<p>Vivendo em ${pais.value.bold().toUpperCase()}</p>`
-            if(ps.value || 'Brasil', 'brasil'){
+            if(ps.value == 'Brasil'){
                 res.innerHTML += `<p>Você é brasileiro!</p>`
-            }else{
+            }else
+            {
                 res.innerHTML += `<p>Você é estrangeiro!</p>`
             }
         }
