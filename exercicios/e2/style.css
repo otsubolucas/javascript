@@ -19,6 +19,9 @@ section{
     border-radius: 10px;
     margin: auto;
 }
+select{
+    overflow: hidden;
+}
 footer{
     text-align: center;
     font-style: italic;

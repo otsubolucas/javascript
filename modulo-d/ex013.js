@@ -1,6 +1,5 @@
 var agora = new Date()
 var mes = agora.getMonth()
-mes = 
 console.log('Que Mês é hoje?')
 switch(mes){
     case 0: 
